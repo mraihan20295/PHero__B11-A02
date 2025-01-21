@@ -24,10 +24,6 @@
   /* border: 5px solid tomato; */
 }
 
-main > section {
-  margin-bottom: 6rem;
-}
-
 /* Typography */
 
 html {
@@ -97,7 +93,6 @@ a {
 /* Primary Navigation */
 .nav {
   display: flex;
-  border: 3px solid tomato;
   gap: 3.2rem;
   margin-block: 2rem;
 }
@@ -107,7 +102,6 @@ a {
   align-items: center;
   gap: 1.1rem;
   font-weight: 700;
-  border: 3px solid green;
 }
 
 .nav__list {
@@ -115,9 +109,12 @@ a {
   display: flex;
   align-items: center;
   flex-grow: 1;
-  border: 3px solid dodgerblue;
   gap: 3.2rem;
   font-weight: 700;
+}
+
+.nav__menu {
+  display: none;
 }
 
 .nav__list li:first-child {
@@ -129,8 +126,26 @@ a {
 }
 
 @media (max-width: 1024px) {
+  .header {
+    border-bottom: 1px solid #fea301;
+  }
+
   .nav__list {
     display: none;
+  }
+
+  .nav__logo p {
+    display: none;
+  }
+
+  .nav__menu {
+    display: block;
+    margin-left: auto;
+    align-self: center;
+    padding: 0.8rem;
+    background: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 2px #ccc;
   }
 }
 
@@ -192,9 +207,10 @@ a {
 /* Curriculum Section */
 /* ======================== */
 
-/* .curriculum {
+.curriculum {
   position: relative;
-} */
+  padding-block: 6rem;
+}
 
 /* .curriculum::before {
   content: url(assets/bg.png);
@@ -286,6 +302,7 @@ a {
 /* Stories Section */
 /* =================================== */
 .stories {
+  padding-block: 6rem;
   background: linear-gradient(
     0deg,
     rgba(254, 163, 1, 0.3) 0%,
@@ -302,7 +319,7 @@ a {
 }
 
 .stories__cards {
-  margin-block: 8rem;
+  margin-block: 6rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
