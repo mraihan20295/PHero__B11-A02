@@ -123,12 +123,20 @@ a {
   margin-left: auto;
 }
 
+@media (max-width: 1024px) {
+  .nav__list {
+    display: none;
+  }
+}
+
+/* =================== */
 /* Hero Section */
+/* =================== */
 .hero {
   display: grid;
   grid-template-columns: 1.5fr 1fr;
   align-items: center;
-  /* justify-items: center; */
+  justify-items: center;
   gap: 5rem;
 }
 
@@ -138,13 +146,51 @@ a {
 }
 
 .hero img {
+  min-width: 390px;
   width: 100%;
 }
 
-/* Curriculum Section */
-.curriculum {
-  position: relative;
+@media (max-width: 1024px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .hero__content {
+    justify-items: center;
+    text-align: center;
+  }
+
+  .hero__image {
+    grid-row-start: 1;
+  }
+
+  .hero img {
+    min-width: auto;
+  }
 }
+
+@media (max-width: 540px) {
+  .hero__heading {
+    font-size: 3.2rem;
+  }
+
+  .hero__description {
+    font-size: 1.4rem;
+  }
+
+  .hero .btn {
+    font-size: 1.6rem;
+    padding-inline: 2.4rem;
+  }
+}
+
+/* ======================= */
+/* Curriculum Section */
+/* ======================== */
+
+/* .curriculum {
+  position: relative;
+} */
 
 /* .curriculum::before {
   content: url(assets/bg.png);
@@ -164,6 +210,12 @@ a {
   gap: 2.8rem;
   grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
   margin-block: 5rem;
+}
+
+@media (max-width: 375px) {
+  .curriculum__body {
+    grid-template-columns: 1fr;
+  }
 }
 
 .curriculum__card {
@@ -221,7 +273,9 @@ a {
   justify-content: center;
 }
 
+/* ================================== */
 /* Stories Section */
+/* =================================== */
 .stories {
   background: linear-gradient(
     0deg,
@@ -247,13 +301,11 @@ a {
 
 .stories__card {
   border-radius: 16px;
-  /* border: 5px solid tomato; */
   overflow: hidden;
   background: #fff;
 }
 
 .stories__card:first-child {
-  /* border: 5px solid red; */
   grid-column: span 2;
   grid-row: span 2;
 }
@@ -266,6 +318,12 @@ a {
   .stories__card:first-child {
     grid-column: span 2;
     grid-row: span 1;
+  }
+}
+
+@media (max-width: 390px) {
+  .stories__cards {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -282,7 +340,6 @@ a {
 
 .stories__card-content {
   padding: 3rem;
-  /* height: 100%; */
   position: relative;
 }
 
@@ -302,6 +359,18 @@ a {
 .stories__card-title {
   font-size: 1.6rem;
   margin-top: 1.8rem;
+}
+
+@media (max-width: 600px) {
+  .stories__card-date {
+    font-size: 1rem;
+    padding: 0.6rem 1.1rem;
+  }
+
+  .stories__card-title {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
 }
 
 .stories__card:first-child .stories__card-title {
