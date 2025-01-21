@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+/* CSS Variables */
+
+:root {
+  --color-primary: #01acfd;
+  --color-secondary: #fea301;
+}
+
+/* CSS Resets */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Typography */
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Quicksand, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  color: #111111;
+  background: #f7f7f7;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  color: #000;
+}
+
+h1 {
+  font-size: 5.6rem;
+}
+
+h2 {
+  font-size: 4.6rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+}
