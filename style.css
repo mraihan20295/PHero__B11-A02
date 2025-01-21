@@ -17,6 +17,13 @@
   padding: 0;
 }
 
+/* Page Container */
+.container {
+  width: min(1160px, 85%);
+  margin-inline: auto;
+  /* border: 5px solid tomato; */
+}
+
 /* Typography */
 
 html {
@@ -48,4 +55,65 @@ h2 {
 
 h3 {
   font-size: 2.4rem;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Buttons */
+.btn {
+  line-height: 1;
+  padding: 1.8rem 6rem;
+  width: max-content;
+  display: block;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.btn--primary {
+  background: var(--color-secondary);
+  color: #fff;
+}
+
+.btn--secondary {
+  background: #111;
+  color: #fff;
+}
+
+/* Primary Navigation */
+.nav {
+  display: flex;
+  border: 3px solid tomato;
+  gap: 3.2rem;
+}
+
+.nav__logo {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+  font-weight: 700;
+  border: 3px solid green;
+}
+
+.nav__list {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  border: 3px solid dodgerblue;
+  gap: 3.2rem;
+  font-weight: 700;
+}
+
+.nav__list li:first-child {
+  margin-left: auto;
+}
+
+.nav__list li:last-child {
+  margin-left: auto;
 }
