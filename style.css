@@ -209,16 +209,8 @@ a {
 .curriculum {
   position: relative;
   padding-block: 6rem;
+  background: url(assets/bg.png);
 }
-
-/* .curriculum::before {
-  content: url(assets/bg.png);
-  margin-top: -6rem;
-  margin-left: -17rem;
-  inset: 0;
-  position: absolute;
-  z-index: -1;
-} */
 
 .curriculum__heading {
   text-align: center;
@@ -275,12 +267,6 @@ a {
 .curriculum__card p {
   color: #808080;
   font-size: 1.6rem;
-}
-
-.curriculum__card p:hover {
-  text-decoration: underline;
-  text-decoration-style: wavy;
-  text-underline-offset: 5px;
 }
 
 /* Link Hover Animation*/
@@ -346,11 +332,13 @@ a {
 /* =================================== */
 .stories {
   padding-block: 6rem;
-  background: linear-gradient(
-    0deg,
-    rgba(254, 163, 1, 0.3) 0%,
-    rgba(255, 255, 255, 0.3) 100%
-  );
+  background: url(assets/bg.png),
+    /* New image on top */
+      linear-gradient(
+        0deg,
+        rgba(254, 163, 1, 0.3) 0%,
+        rgba(255, 255, 255, 0.3) 100%
+      ); /* Existing gradient background */
 }
 
 .stories__heading {
