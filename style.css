@@ -21,7 +21,6 @@
 .container {
   width: min(1160px, 85%);
   margin-inline: auto;
-  /* border: 5px solid tomato; */
 }
 
 /* Typography */
@@ -252,10 +251,6 @@ a {
   margin-inline: auto;
 }
 
-.curriculum__card .link {
-  margin-top: auto;
-}
-
 .curriculum__card:nth-child(1) {
   border: 0.943px solid #def5ff;
   background: linear-gradient(180deg, #def5ff 0%, rgba(255, 255, 255, 0) 40%),
@@ -275,6 +270,54 @@ a {
   background: linear-gradient(180deg, #eee1ff 0%, rgba(255, 255, 255, 0) 40%),
     #fff;
   box-shadow: 0px 0px 28.296px 0.943px rgba(0, 0, 0, 0.05) inset;
+}
+
+.curriculum__card p {
+  color: #808080;
+  font-size: 1.6rem;
+}
+
+.curriculum__card p:hover {
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-underline-offset: 5px;
+}
+
+/* Link Hover Animation*/
+.curriculum__card .link {
+  font-weight: 700;
+  margin-top: auto;
+  position: relative;
+  margin-inline: auto;
+}
+
+.curriculum__card .link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background: currentColor;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.curriculum__card .link:hover::after {
+  width: 100%;
+}
+
+/* --------------------------------------------- */
+
+.curriculum__card:nth-child(1) .link {
+  color: #64c8ff;
+}
+
+.curriculum__card:nth-child(2) .link {
+  color: #f0aa00;
+}
+
+.curriculum__card:nth-child(3) .link {
+  color: #8700ff;
 }
 
 .carousel-buttons {
