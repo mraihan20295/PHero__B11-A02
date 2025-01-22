@@ -33,6 +33,7 @@ body {
   font-family: Quicksand, Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-size: 2rem;
+  line-height: 1.5;
   color: #111111;
   background: #f7f7f7;
 }
@@ -42,6 +43,7 @@ h2,
 h3 {
   font-weight: 700;
   color: #000;
+  line-height: 1.2;
 }
 
 h1 {
@@ -162,6 +164,14 @@ a {
 .hero__content {
   display: grid;
   gap: 2.4rem;
+}
+
+.hero__heading .first {
+  color: var(--color-secondary);
+}
+
+.hero__heading .last {
+  color: var(--color-primary);
 }
 
 .hero img {
@@ -338,6 +348,15 @@ a {
   .carousel-buttons {
     display: none;
   }
+}
+
+/* Marquee Section */
+.marquee {
+  /* border: 5px solid tomato; */
+  padding-block: 2rem;
+  color: var(--color-secondary);
+  font-weight: 500;
+  display: block;
 }
 
 /* ================================== */
