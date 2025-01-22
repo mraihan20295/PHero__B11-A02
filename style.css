@@ -105,6 +105,10 @@ a {
   font-weight: 700;
 }
 
+.nav__logo p {
+  font-size: 3.2rem;
+}
+
 .nav__list {
   list-style-type: none;
   display: flex;
