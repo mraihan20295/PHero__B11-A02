@@ -325,6 +325,19 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.3s;
+}
+
+.carousel-buttons > *:hover {
+  background: #fff;
+  color: #fea301;
+  border: 1px solid #fea301;
+}
+
+@media (max-width: 500px) {
+  .carousel-buttons {
+    display: none;
+  }
 }
 
 /* ================================== */
